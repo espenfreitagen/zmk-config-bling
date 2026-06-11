@@ -21,6 +21,13 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SPACE>, <&kp BSPC>, <&kp DEL>;
+        };
     };
 
     conditional_layers {
@@ -45,7 +52,7 @@
         //│  Q       │  X       │  M       │  C       │  V       │   │  K       │  P       │ , <      │ . >      │ / ?      │
             &kp Q      &kp X      &kp M      &kp C      &kp V          &kp K      &kp P      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 ENTER &key_repeat     &kp SPACE  &lt 1 BSPC
+                                            &lt 2 ENTER &key_repeat     &td0  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -88,10 +95,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭───────────────┬──────────────┬────────────┬───────────────┬──────────╮
         //│          │          │          │          │          │   │               │              │            │               │          │
-           &trans      &trans     &trans     &trans    &trans           &trans        &trans         &trans       &trans          &trans
+           &trans      &trans     &trans     &trans    &trans           &trans        &mmv SCRL_DOWN &mmv SCRL_UP  &trans         &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├───────────────┼──────────────┼────────────┼───────────────┼──────────┤
         //│          │          │          │          │          │   │               │              │            │               │          │
-           &mkp MB4   &mkp MB3   &mkp MB2   &mkp MB1   &mkp MB5        &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans
+           &mkp MB4   &mkp MB3   &mkp MB2   &mkp MB1   &mkp MB5       &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├───────────────┼──────────────┼────────────┼───────────────┼──────────┤
         //│          │          │          │          │          │   │               │              │            │               │          │
            &trans     &trans     &trans    &trans     &trans          &trans          &kp LSHFT      &kp LCTRL    &kp LALT        &kp LGUI
