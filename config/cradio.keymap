@@ -36,7 +36,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  B       │  L       │  D       │  W       │  Z       │   │  '       │  F       │  O       │  U       │  J       │
-            &kp B      &kp L      &kp D      &kp W      &kp Z          &kp APOS      &kp F      &kp O      &kp U      &kp J
+            &kp B      &kp L      &kp D      &kp W      &kp Z         &lt 4 APOS  &kp F      &kp O      &kp U      &kp J
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  N       │  R       │  T       │  S       │  G       │   │  Y       │  H       │  A       │  E       │ I        │
             HRML(N,        R,         T,         S)     &kp G          &kp Y      HRMR(H,        A,          E,        I)
@@ -44,7 +44,7 @@
         //│  Q       │  X       │  M       │  C       │  V       │   │  K       │  P       │ , <      │ . >      │ / ?      │
             &kp Q      &kp X      &kp M      &kp C      &kp V          &kp K      &kp P      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &key_repeat         &kp SPACE  &lt 1 BSPC
+                                            &lt 2 ENT   &key_repeat     &kp SPACE  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -53,15 +53,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+            &kp INS    &kp N7     &kp N8     &kp N9     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SEMI
+        //│ DELETE   │  4       │  5       │  6       │  0       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
+            &kp DEL    &kp N4     &kp N5     &kp N6     &kp N0         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
+           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &kp TAB    &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
