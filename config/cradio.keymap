@@ -95,13 +95,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭───────────────┬──────────────┬────────────┬───────────────┬──────────╮
         //│          │          │          │          │          │   │               │              │            │               │          │
-           &trans      &trans     &trans     &trans    &trans           &trans        &msc SCRL_DOWN &msc SCRL_UP  &trans         &trans
+            &trans      &trans     &trans     &trans    &trans           &trans        &msc SCRL_DOWN &msc SCRL_UP  &trans         &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├───────────────┼──────────────┼────────────┼───────────────┼──────────┤
         //│          │          │          │          │          │   │               │              │            │               │          │
-           &mkp MB4   &mkp MB3   &mkp MB2   &mkp MB1   &mkp MB5       &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans
+            &mkp MB4   &mkp MB3   &mkp MB2   &mkp MB1   &mkp MB5       &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├───────────────┼──────────────┼────────────┼───────────────┼──────────┤
         //│          │          │          │          │          │   │               │              │            │               │          │
-           &trans     &trans     &trans    &trans     &trans          &trans          &kp LSHFT      &kp LCTRL    &kp LALT        &kp LGUI
+            &trans     &trans     &trans     &trans     &trans          &trans          &kp LSHFT      &kp LCTRL    &kp LALT        &kp LGUI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├───────────────┼──────────────┼────────────┴───────────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -110,18 +110,18 @@
 
         fourth_layer {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &C_MUTE    &C_VOL_DN  &C_VOL_UP &bt BT_SEL 1    &trans     &C_BRI_UP  &C_BRI_DN  &trans    &bootloader
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        //╭─────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────┬──────────────┬──────────────┬──────────┬───────────╮
+        //│ RESET       │              │              │              │PROFILE 0     │   │          │              │              │          │  RESET    │
+           &sys_reset     &trans         &trans         &trans         &bt BT_SEL 0       &trans     &trans         &trans         &trans    &sys_reset
+        //├─────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┼──────────┼───────────┤
+        //│BOOTLOADER   │              │              │              │PROFILE 1     │   │          │              │              │          │BOOTLOADER │
+          &bootloader     &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &bt BT_SEL 1       &trans     &kp C_BRI_UP   &kp C_BRI_DN   &trans    &bootloader
+        //├─────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┼──────────┼───────────┤
+        //│             │              │              │ CLEAR BT     │PROFILE 2     │   │          │              │              │          │           │
+            &trans        &trans         &trans         &bt BT_CLR     &bt BT_SEL 2       &trans     &trans         &trans         &trans     &trans
+        //╰─────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┴──────────┴───────────╯
+                                                             &trans     &trans            &trans     &trans
+        //                                            ╰──────────────┴──────────────╯   ╰──────────┴──────────╯
             >;
         };
     };
