@@ -74,9 +74,9 @@
             &kp DEL      &kp N4     &kp N5     &kp N6     &kp N0         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &trans  
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
         //│ CAPS       │  1       │  2       │  3       │          │   │          │          │          │          │           │
-            &caps_word   &kp N1     &kp N2     &kp N3     &trans         &trans     &kp LGUI   &trans     &trans     &trans   
+            &caps_word   &kp N1     &kp N2     &kp N3     &kp TAB        &trans     &kp LGUI   &trans     &trans     &trans   
         //╰────────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴───────────╯
-                                               &kp TAB    &kp ESC        &trans     &trans
+                                               &trans     &trans         &trans     &trans
         //                                   ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
