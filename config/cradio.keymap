@@ -25,14 +25,14 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp SPACE>, <&kp BSPC>, <&kp DEL>;
         };
 
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp ENTER>, <&kp ESC>;
         };
     };
@@ -74,7 +74,7 @@
             &kp DEL      &kp N4     &kp N5     &kp N6     &kp N0         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &trans  
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
         //│ CAPS       │  1       │  2       │  3       │          │   │          │          │          │          │           │
-            &caps_word   &kp N1     &kp N2     &kp N3     &kp TAB        &trans     &kp LGUI   &trans     &trans     &trans   
+            &caps_word   &kp N1     &kp N2     &kp N3     &kp TAB        &kp LSHFT  &kp LGUI   &trans     &trans     &trans   
         //╰────────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴───────────╯
                                                &trans     &trans         &trans     &trans
         //                                   ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -85,7 +85,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬──────────╮   ╭───────────┬───────────┬───────────┬──────────┬───────────╮
         //│  `       │  !       │  [       │  {        │ (        │   │  )        │  ]        │  }        │  ;       │  ,        │
-           &kp GRAVE   &kp EXCL   &kp LBKT   &kp LBRC    &kp LPAR       &kp RPAR   &kp RBKT    &kp RBRC    &kp SEMI   &kp COMMA
+           &kp GRAVE   &kp EXCL   &kp LBKT   &kp LBRC    &kp LPAR       &kp RPAR   &kp RBKT    &kp RBRC    &kp PRCNT  &kp COMMA
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
         //│  .       │  #       │  ^       │  =        │  &       │   │  ?        │  _        │  $        │  *       │  /        │
             &kp DOT    &kp HASH   &kp CARET  &kp EQUAL   &kp AMPS       &kp QMARK   &kp UNDER   &kp DLLR    &kp STAR   &kp FSLH 
@@ -93,7 +93,7 @@
         //│  @       │  ~       │  <       │  |        │  '       │   │  "        │  -        │  >        │  \       │  +        │
             &kp AT     &kp TILDE  &kp LT     &kp PIPE    &kp SQT        &kp DQT     &kp MINUS   &kp GT      &kp BSLH   &kp PLUS
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
-                                             &trans      &trans         &kp PRCNT   &kp LSHFT
+                                             &trans      &trans         &kp COLON   &kp SEMI 
         //                                 ╰───────────┴──────────╯   ╰───────────┴───────────╯
             >;
         };
