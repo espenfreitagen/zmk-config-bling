@@ -67,8 +67,8 @@
         num_navs_layer { // 1
             bindings = <
         //╭────────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬───────────╮
-        //│ /          │  7       │  8       │  9       │  +       │   │ -        │ PAGE DN  │ PAGE UP  │          │ *         │
-            &kp FSLH     &kp N7     &kp N8     &kp N9     &kp PLUS       &kp MINUS  &kp PG_DN  &kp PG_UP  &trans     &kp STAR 
+        //│            │  7       │  8       │  9       │  +       │   │ -        │ PAGE DN  │ PAGE UP  │ =        │ *         │
+            &kp FSLH     &kp N7     &kp N8     &kp N9     &kp PLUS       &kp MINUS  &kp PG_DN  &kp PG_UP  &kp EQUAL  &kp STAR 
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
         //│  0         │  4       │  5       │  6       │  0       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │ .         │
             &kp N0       &kp N4     &kp N5     &kp N6     &kp N0         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &DOT    
@@ -87,10 +87,10 @@
         //│  `       │  :       │  {       │  [        │ (        │   │  )        │  ]        │  }        │  ;       │  ,        │
            &kp GRAVE   &kp COLON  &kp LBRC   &kp LBKT    &kp LPAR       &kp RPAR   &kp RBKT    &kp RBRC    &kp SEMI   &kp COMMA
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-        //│  #       │  ?       │  ^       │  =        │  '       │   │  "        │  _        │  $        │  /       │  *        │
+        //│  #       │  ?       │  ^       │  =        │  '       │   │  "        │  _        │  $        │          │  *        │
             &kp HASH   &kp QMARK  &kp CARET  &kp EQUAL   &kp SQT        &kp DQT     &kp UNDER   &kp DLLR    &kp FSLH   &kp STAR 
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-        //│  @       │  ~       │  <       │  |        │  &       │   │ !         │  -        │  >        │  \       │  +        │
+        //│  @       │  ~       │  <       │  |        │  &       │   │ !         │  -        │  >        │          │  +        │
             &kp AT     &kp TILDE  &kp LT     &kp PIPE    &kp AMPS       &kp EXCL    &kp MINUS   &kp GT      &kp BSLH   &kp PLUS
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
                                              &trans      &trans         &kp PRCNT   &kp LSHFT   
