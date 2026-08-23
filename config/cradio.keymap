@@ -21,22 +21,22 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-/*
+
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp BSPC>, <&kp ESC>, <&kp DEL>;
         };
-*/
-/*
+
+
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp ENTER>, <&kp ESC>;
         };
-*/
+
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -224,4 +224,3 @@
 
     };
 };
-}
