@@ -101,16 +101,16 @@
         sym_layer { 
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬──────────╮   ╭───────────┬───────────┬───────────┬──────────┬───────────╮
-        //│  LSHFT   │  {       │  [       │  (        │ '        │   │  "        │  )        │  ]        │  }       │  ;        │
-           &kp LSHFT   &kp LBRC   &kp LBKT   &kp LPAR    &kp SQT        &kp DQT     &kp RPAR    &kp RBKT    &kp RBRC   &kp SEMI 
+        //│  '       │  {       │  [       │  (        │ '        │   │  "        │  )        │  ]        │  }       │  %        │
+           &kp SQT     &kp LBRC   &kp LBKT   &kp LPAR    &kp SQT        &kp DQT     &kp RPAR    &kp RBKT    &kp RBRC   &kp PRCNT
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-        //│  #       │  ?       │  ^       │  =        │  `       │   │  ,        │  _        │  $        │          │  *        │
-            &kp HASH   &kp QMARK  &kp CARET  &kp EQUAL   &kp GRAVE      &kp COMMA   &kp UNDER   &kp DLLR    &kp FSLH   &kp STAR 
+        //│  #       │  ?       │  ^       │  =        │  `       │   │  ;        │  _        │  $        │          │  *        │
+            &kp HASH   &kp QMARK  &kp CARET  &kp EQUAL   &kp GRAVE      &kp SEMI    &kp UNDER   &kp DLLR    &kp FSLH   &kp STAR 
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
         //│  @       │  ~       │  <       │  |        │  &       │   │ !         │  -        │  >        │          │  +        │
             &kp AT     &kp TILDE  &kp LT     &kp PIPE    &kp AMPS       &kp EXCL    &kp MINUS   &kp GT      &kp BSLH   &kp PLUS
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
-                                             &trans      &trans         &kp PRCNT   &trans      
+                                             &trans      &trans         &trans      &kp LSHFT   
         //                                 ╰───────────┴──────────╯   ╰───────────┴───────────╯
             >;
         };
@@ -192,13 +192,13 @@
             bindings = <
         //╭─────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────┬──────────────┬──────────────┬──────────┬───────────╮
         //│  Q          │  W           │  E           │  R           │  T           │   │  Y       │  U           │  I           │  O       │  P        │
-            &kp Q         &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &trans    
+            &kp Q         &kp W          &kp E          &kp R          &kp T              &kp Y      &kp U          &kp I          &kp O      &kp P    
         //├─────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┼──────────┼───────────┤
         //│  A          │  S           │  D           │  F           │  G           │   │  H       │  J           │  K           │  L       │           │
-            &trans        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &trans 
+            &kp A         &kp S          &kp D          &kp F          &kp G              &kp H      &kp J          &kp K          &kp L      &kp 
         //├─────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┼──────────┼───────────┤
         //│  Z          │  X           │  C           │  V           │  B           │   │  N       │  M           │              │          │ Normal    │
-            &trans        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &tog 7
+            &kp Z         &kp X          &kp C          &kp V          &kp B              &kp N      &kp M          &trans         &trans     &tog 7
         //╰─────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┴──────────┴───────────╯
                                                         &kp LSHFT      &kp SPACE          &trans     &trans
         //                                            ╰──────────────┴──────────────╯   ╰──────────┴──────────────╯
