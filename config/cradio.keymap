@@ -50,21 +50,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp COMMA>, <&kp SEMI>;
         };
-        tog_on: toggle_layer_on_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer On";
-            toggle-mode = "on";
-            locking;
-        };
-
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
-            locking;
-        };
     };
 
     conditional_layers {
@@ -177,7 +162,7 @@
             &trans        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans      &trans 
         //├─────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┼──────────┼───────────┤
         //│ Gaming      │              │              │              │              │   │          │              │              │          │           │
-            &tog_on 7        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &trans
+            &tog 7        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &trans
         //╰─────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┴──────────┴───────────╯
                                                         &trans         &trans             &trans     &trans
         //                                            ╰──────────────┴──────────────╯   ╰──────────┴──────────────╯
@@ -213,7 +198,7 @@
             &trans        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &trans 
         //├─────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┼──────────┼───────────┤
         //│  Z          │  X           │  C           │  V           │  B           │   │  N       │  M           │              │          │ Normal    │
-            &trans        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &tog_off 7
+            &trans        &trans         &trans         &trans         &trans             &trans     &trans         &trans         &trans     &tog 7
         //╰─────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────┼──────────────┼──────────────┴──────────┴───────────╯
                                                         &kp LSHFT      &kp SPACE          &trans     &trans
         //                                            ╰──────────────┴──────────────╯   ╰──────────┴──────────────╯
