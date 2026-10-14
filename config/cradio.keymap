@@ -55,7 +55,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
+            if-layers = <2 1>;
             then-layer = <3>;
         };
     };
@@ -86,7 +86,7 @@
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
             &kp PRCNT    &kp N4     &kp N5     &kp N6     &kp TAB        &trans     &kp LSHFT  &kp RCTRL  &kp RALT   &kp LGUI
         //╰────────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴───────────╯
-                                               &kp SPACE  &kp ENTER      &trans     &trans
+                                               &trans     &kp ENTER      &trans     &trans
         //                                   ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
