@@ -80,11 +80,11 @@
         num_nav_layer {
             bindings = <
         //╭────────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬───────────╮
-            &kp SQT      &kp N7     &kp N8     &kp N9     &kp PLUS       &kp MINUS  &kp PG_DN  &kp PG_UP  &kp EQUAL  &kp SQT
+            &trans       &kp N7     &kp N8     &kp N9     &trans         &trans     &kp PG_DN  &kp PG_UP  &trans     &trans 
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
-            &kp N0       &kp N1     &kp N2     &kp N3     &kp N0         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &kp DOT
+            &kp N0       &kp N4     &kp N5     &kp N6     &kp N0         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &trans 
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
-            &kp PRCNT    &kp N4     &kp N5     &kp N6     &kp TAB        &trans     &kp LSHFT  &kp RCTRL  &kp RALT   &kp LGUI
+            &trans       &kp N1     &kp N2     &kp N3     &kp TAB        &trans     &kp LSHFT  &kp RCTRL  &kp RALT   &kp LGUI
         //╰────────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴───────────╯
                                                &trans     &kp ENTER      &trans     &trans
         //                                   ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -95,13 +95,13 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬──────────╮   ╭───────────┬───────────┬───────────┬──────────┬───────────╮
-            &trans     &kp LBRC   &kp LBKT   &kp LPAR    &kp SQT        &kp SQT     &kp RPAR    &kp RBKT    &kp RBRC   &kp SEMI
+            &kp LBRC   &kp LBKT   &kp LPAR    &kp SQT    &trans         &trans      &kp DQT     &kp RPAR    &kp RBKT    &kp RBRC
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-            &kp HASH   &kp QMARK  &kp CARET  &kp EQUAL   &kp GRAVE      &kp PRCNT   &kp UNDER   &kp DLLR    &kp FSLH   &kp STAR
+            &kp HASH   &kp QMARK  &kp CARET  &kp EQUAL   &kp GRAVE      &trans      &kp UNDER   &kp DLLR    &kp FSLH   &kp STAR
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
             &kp AT     &kp TILDE  &kp LT     &kp PIPE    &kp AMPS       &kp EXCL    &kp MINUS   &kp GT      &kp BSLH   &kp PLUS
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
-                                             &trans      &trans         &kp LSHFT   &trans
+                                             &trans      &trans         &kp PRCNT   &trans
         //                                 ╰───────────┴──────────╯   ╰───────────┴───────────╯
             >;
         };
@@ -140,13 +140,13 @@
         sym2_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬──────────╮   ╭───────────┬───────────┬───────────┬──────────┬───────────╮
-            &trans     &kp LBRC   &kp LBKT   &kp LPAR    &kp SQT        &kp SQT     &kp RPAR    &kp RBKT    &kp RBRC   &kp SEMI
+            &kp HASH   &kp EXCL   &kp FSLH   &trans      &trans         &trans      &trans      &kp AMPS    &kp PIPE   &trans  
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-            &kp HASH   &kp QMARK  &kp CARET  &kp EQUAL   &kp GRAVE      &kp PRCNT   &kp UNDER   &kp DLLR    &kp FSLH   &kp STAR
+            &trans     &kp SQT    &kp DQT    &kp LSHFT   &key_repeat   &key_repeat  &kp SEMI    &kp DOT     &kp COMMA  &trans  
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-            &kp AT     &kp TILDE  &kp LT     &kp PIPE    &kp AMPS       &kp EXCL    &kp MINUS   &kp GT      &kp BSLH   &kp PLUS
+            &trans     &trans     &kp LT     &trans      &trans         &trans      &trans      &kp GT      &trans     &trans  
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
-                                             &trans      &trans         &trans      &kp LSHFT
+                                             &trans      &trans         &trans      &trans   
         //                                 ╰───────────┴──────────╯   ╰───────────┴───────────╯
             >;
 
