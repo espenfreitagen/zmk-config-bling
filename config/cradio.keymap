@@ -84,7 +84,7 @@
         //╭────────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬───────────╮
             &trans       &kp N7     &kp N8     &kp N9     &kp ESC        &trans     &kp PG_DN  &kp PG_UP  &trans     &trans 
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
-            &kp N0       &kp N4     &kp N5     &kp N6     &kp S          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &trans 
+            &kp N0       &kp N4     &kp N5     &kp N6     &kp S          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans 
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
             &trans       &kp N1     &kp N2     &kp N3     &kp TAB        &trans     &kp LSHFT  &kp RCTRL  &kp RALT   &kp LGUI
         //╰────────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴───────────╯
@@ -97,13 +97,13 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬──────────╮   ╭───────────┬───────────┬───────────┬──────────┬───────────╮
-            &kp LBRC   &kp LBKT   &kp LPAR   &kp SQT     &trans         &trans      &kp DQT     &kp RPAR    &kp RBKT   &kp RBRC
+            &kp LBRC   &kp LBKT   &kp LPAR   &kp SQT     &kp ESC        &trans      &kp DQT     &kp RPAR    &kp RBKT   &kp RBRC
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
             &kp HASH   &kp QMARK  &kp CARET  &kp EQUAL   &kp GRAVE      &trans      &kp UNDER   &kp DLLR    &kp FSLH   &kp STAR
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
             &kp AT     &kp TILDE  &kp LT     &kp PIPE    &kp AMPS       &kp EXCL    &kp MINUS   &kp GT      &kp BSLH   &kp PLUS
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
-                                             &trans      &trans         &kp ENTER   &lt 5 PRCNT
+                                             &trans      &kp ENTER      &trans      &lt 5 PRCNT
         //                                 ╰───────────┴──────────╯   ╰───────────┴───────────╯
             >;
         };
@@ -112,13 +112,13 @@
         mouse_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭────────────────┬────────────────┬──────────────┬─────────────────┬──────────╮
-            &trans      &trans     &trans    &trans     &trans         &trans           &msc SCRL_DOWN   &msc SCRL_UP   &trans            &trans
+            &trans      &trans     &trans    &trans     &kp ESC        &trans           &msc SCRL_DOWN   &msc SCRL_UP   &trans            &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├────────────────┼────────────────┼──────────────┼─────────────────┼──────────┤
             &mkp MB4   &mkp MB3   &mkp MB2   &mkp MB1   &mkp MB5       &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├────────────────┼────────────────┼──────────────┼─────────────────┼──────────┤
             &trans     &trans     &trans     &trans     &trans         &trans           &kp LSHFT        &kp LCTRL      &kp LALT          &kp LGUI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├────────────────┼────────────────┼──────────────┴─────────────────┴──────────╯
-                                             &trans     &trans         &trans           &trans
+                                             &trans     &kp ENTER      &trans           &trans
         //                                 ╰──────────┴──────────╯   ╰────────────────┴────────────────╯
             >;
         };
@@ -142,13 +142,13 @@
         sym2_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬──────────╮   ╭───────────┬───────────┬───────────┬──────────┬───────────╮
-            &kp HASH   &kp EXCL   &kp FSLH   &trans      &trans         &trans      &trans      &kp AMPS    &kp PIPE   &trans  
+            &kp HASH   &kp EXCL   &kp FSLH   &trans      &kp ESC        &trans      &trans      &kp AMPS    &kp SEMI   &trans  
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-            &trans     &kp SQT    &kp DQT    &kp LSHFT   &key_repeat   &key_repeat  &kp SEMI    &kp DOT     &kp COMMA  &kp ENTER
+            &trans     &trans     &trans     &kp LSHFT   &key_repeat   &key_repeat  &kp PIPE    &kp DOT     &kp COMMA  &kp ENTER
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
             &trans     &trans     &kp LT     &trans      &trans         &trans      &trans      &kp GT      &trans     &trans  
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
-                                             &trans      &trans         &trans      &trans   
+                                             &trans      &kp ENTER      &trans      &trans   
         //                                 ╰───────────┴──────────╯   ╰───────────┴───────────╯
             >;
 
