@@ -82,7 +82,7 @@
         num_nav_layer {
             bindings = <
         //╭────────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬───────────╮
-            &trans       &kp N7     &kp N8     &kp N9     &kp ESC        &kp GRAVE  &kp PG_DN  &kp PG_UP  &trans     &trans 
+            &trans       &kp N7     &kp N8     &kp N9     &kp ESC        &kp GRAVE  &kp PG_DN  &kp PG_UP  &trans     &kp DOT
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
             &kp N0       &kp N4     &kp N5     &kp N6     &kp DOT        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp COMMA
         //├────────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼───────────┤
@@ -142,9 +142,9 @@
         sym2_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬──────────╮   ╭───────────┬───────────┬───────────┬──────────┬───────────╮
-            &trans     &trans     &trans     &trans      &trans         &trans      &trans      &kp AMPS    &kp SEMI   &trans  
+            &trans     &trans     &trans     &kp F       &trans         &trans      &trans      &kp AMPS    &kp SEMI   &trans  
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
-            &kp AMPS   &kp HASH   &kp EXCL   &kp FSLH    &kp PIPE      &key_repeat &key_repeat  &kp DOT     &kp COMMA  &kp ENTER
+            &trans     &kp EXCL   &kp FSLH   &kp AMPS    &kp PIPE      &key_repeat &key_repeat  &kp DOT     &kp COMMA  &kp ENTER
         //├──────────┼──────────┼──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼──────────┼───────────┤
             &trans     &trans     &kp LT     &trans      &trans         &trans      &trans      &kp GT      &trans     &trans  
         //╰──────────┴──────────┴──────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┴──────────┴───────────╯
